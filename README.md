@@ -51,8 +51,8 @@ src/
     java/uvg/edu/gt/
       GraphTest.java  # Pruebas JUnit 5
 docs/
-  uml.puml            # Diagrama de clases PlantUML
-  uml.md              # Instrucciones para renderizar + notas de diseño
+  uml.puml            # Fuente PlantUML del diagrama de clases
+  diagrama-uml.png    # Diagrama de clases renderizado
 ```
 
 ---
@@ -96,4 +96,6 @@ Punto de entrada. Lee `guategrafo.txt` del classpath y expone el menú:
 
 ## Diagrama UML
 
-Ver [`docs/uml.puml`](docs/uml.puml) — renderizable en [PlantText](https://www.planttext.com/) o [PlantUML Online](https://www.plantuml.com/plantuml/uml/).
+![Diagrama de clases](docs/diagrama-uml.png)
+
+Fuente PlantUML: [`docs/uml.puml`](docs/uml.puml)
