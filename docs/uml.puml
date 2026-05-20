@@ -1,0 +1,35 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam classFontSize 13
+skinparam defaultFontName Monospaced
+
+class Graph {
+  - INF : double
+  - vertices : List<String>
+  - adj : double[][]
+  - n : int
+  - dist : double[][]
+  - next : int[][]
+  --
+  + addVertex(v: String) : void
+  + addEdge(u: String, v: String, w: double) : void
+  + removeEdge(u: String, v: String) : void
+  + floyd() : double[][]
+  + getPath(u: String, v: String) : List<String>
+  + graphCenter() : String
+  + printMatrix() : void
+  + indexOf(v: String) : int
+  + getVertices() : List<String>
+  + size() : int
+}
+
+class Main {
+  --
+  + main(args: String[]) : void
+  - loadFromFile(g: Graph, resource: String) : void
+  - runFloydAndShowCenter(g: Graph) : void
+  - menu(g: Graph) : void
+}
+
+Main ..> Graph : uses
+@enduml
