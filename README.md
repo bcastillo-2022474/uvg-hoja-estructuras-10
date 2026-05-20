@@ -53,6 +53,7 @@ src/
 docs/
   uml.puml            # Fuente PlantUML del diagrama de clases
   diagrama-uml.png    # Diagrama de clases renderizado
+networkx_floyd.py     # Implementación opcional con NetworkX (Python)
 ```
 
 ---
@@ -91,6 +92,19 @@ Punto de entrada. Lee `guategrafo.txt` del classpath y expone el menú:
 1. Aplicar Floyd → matriz APSP `dist[i][j]`
 2. **Excentricidad(v)** = max de la columna `v` en `dist` = peor distancia desde cualquier origen hacia `v`
 3. **Centro** = vértice con mínima excentricidad
+
+---
+
+## Implementación opcional – NetworkX (Python)
+
+Requiere Python 3.10+ y NetworkX:
+
+```bash
+pip install networkx
+python3 networkx_floyd.py
+```
+
+Replica las mismas funcionalidades del programa Java: carga `guategrafo.txt`, imprime la matriz APSP completa, calcula el centro del grafo y expone el mismo menú interactivo.
 
 ---
 
